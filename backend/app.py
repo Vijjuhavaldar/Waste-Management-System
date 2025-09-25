@@ -15,10 +15,10 @@ from routes.waste_request_routes import waste_request_bp
 def test_db_connection():
     try:
         connection = pymysql.connect(
-            host='localhost',
+            host='127.0.0.1',
             user='root',
-            password='root',
-            port=3306
+            password='vijju@2004',
+            port=3305
         )
         print("Successfully connected to MySQL server!")
         connection.close()
